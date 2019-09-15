@@ -43,7 +43,7 @@ var server = http.createServer(function(request, response) {
     response.setHeader("Content-Type", "text/css;charset=utf-8");
     response.write(`h1{color: red;}`);
     response.end();
-  } else if (path === "/y.css") {
+  } else if (path === "/y") {
     response.statusCode = 200;
     response.setHeader("Content-Type", "text/javascript;charset=utf-8");
     response.write(`console.log('这是JS内容')`);
